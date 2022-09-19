@@ -1,0 +1,36 @@
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: left;
+}
+
+nav {
+    text-align: right;
+    flex-direction: row;
+}
+
+body {
+    flex-direction: column;
+}
+
+/* Changes in design for tablets */
+@media screen and (max-width:992px) {
+
+}
+
+/* Changes in design for mobiles */
+@media screen and (max-width:768px) {
+
+}
