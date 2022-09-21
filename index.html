@@ -4,6 +4,7 @@
         <title>Olga Gavrushenko: professional portfolio</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     </head>
@@ -11,29 +12,78 @@
         <header>
                 <h1>Olga Gavrushenko</h1>
                 <nav>
-                    <ul class="topnav" id="myTopnav">
-                        <li><a href="#about-me">About me</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact-me">Contact me</a></li>
-                        <li><a href="https://zety.com/profile/olga-gavrushenko">Resume</a></li>
+                    <ul class="nav-elements">
+                        <li class="nav-element"><a href="#about-me">About me</a></li>
+                        <li class="nav-element"><a href="#work">Work</a></li>
+                        <li class="nav-element"><a href="#contact-me">Contact me</a></li>
+                        <li class="nav-element"><a href="https://zety.com/profile/olga-gavrushenko">Resume</a></li>
                     </ul>
                 </nav>
         </header>
         
-        <section class="container subheader" >
+        <section class="subheader">
             <h2>My Professional Portfolio</h2>
+            <img src="assets/images/banner.jpg" alt="wooden fence painted diagonally in light and dark blue colors">
         </section>
 
         <main>
             <section id="about-me">
                 <h3>About Me</h3>
+                <p>Software Engineer with 10 years of progressive experience in Qulity Assurance. Expertise in creating
+                    detailed test plans, test cases for manual and automation testing within the
+                    application under test, testing functional and non-functional requirements,
+                    requirements analysis, and continuous improvements in the quality of testing. Design
+                    automation framework for UI using Selenium WebDriver and RESTfull API using
+                    RestAssured (Java), develop and maintain frameworks. Proficient in all phases of the software development lifecycle
+                    (SDLC). Continue education as a Full Stack Developed in Cooding Bootcamp.</p>
             </section>
             <section id="work">
                 <h3>Work</h3>
-            </section>
+                    <section class="project">
+                        <h4 class="project-name">Surf Report</h4>
+                        <p class="description">MERN Stack</p>
+                        <img src="assets/images/project-surf.jpg" alt="abstract picture in grey color with perspective view of foggy field">
+                    </section>
+                    <section class="project">
+                        <h4 class="project-name">LED Wall</h4>
+                        <p class="description">Node/IoT</p>
+                        <img src="assets/images/project-led-wall.jpg" alt="zoomed-in LED screen with visible luminous pixels">
+                    </section>
+                    <section class="project">
+                        <h4 class="project-name">Calculator</h4>
+                        <p class="description">React/JavaScript/CSS</p>
+                        <img src="assets/images/project-calculator.jpg" alt="laptop with code on the screen">
+                    </section>
+                    <section class="project">
+                        <h4 class="project-name">Pastel Puzzles</h4>
+                        <p class="description">MERN Stack</p>
+                        <img src="assets/images/project-pastel-puzzles.jpg" alt="laptop with code on the screen">
+                    </section>
+                    <section class="project">
+                        <h4 class="project-name">Run Buddy</h4>
+                        <p class="description">HTML/CSS</p>
+                        <img src="assets/images/project-run-buddy.jpg" alt="upper left part of 'Run Buddy' site scrceenshot">
+                    </section>
         </main>
         <footer id="contact-me">
             <h3>Contact Me</h3>
+            <ul>
+                <li class="contact-details">
+                    <a href="tel:4155100829">415.510.0829</a>
+                </li>
+                <li class="contact-details">
+                    <a href="mailto:olga.gavrushenko@hotmail.com?subject=Contact from portfolio site.">olga.gavrushenko@hotmail.com</a>
+                </li>
+                <li class="contact-details">
+                    <a href="https://github.com/OlgaGav/">GitHub</a>
+                </li>
+                <li class="contact-details">
+                    <a href="https://twitter.com/Olga_OLAN">Twitter</a>
+                </li>
+                <li class="contact-details">
+                    <a href="https://open.spotify.com/">Spotify</a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>    
