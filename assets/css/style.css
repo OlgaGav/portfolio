@@ -1,36 +1,153 @@
-/* Universal selector */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+:root {
+    /* page background color */
+    --light-grey: #EDEDF6;
+    /* header h1, h2 and color of text in header and banner */
+    --dark-grey: #31343D;
+    /* color of navigation text, h3, background for labels, borders */
+    --light-blue: #92CCCD;
+    /* text color in main section and footer, paragraph about me */
+    --medium-grey: #435877;
+    /* color for labels in main section: h4, .description, .contactdetails */
+    --grey: #31333E;
+    /* highlight color for projects */
+    --light-on: #A1AF34;
+}
+
+::selection {
+    background-color: var(--light-on);
+}
+
+header {
+    width: 100%;
+    background-color: var(--dark-grey);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.header__label {
+    margin: 1rem 1rem 1rem 0;
+    padding: 0 1rem 0 4rem;
+}
+
+nav {
+    margin: 0 5rem 0 0;
+}
+
+.nav__link {
+    font-size: 130%;
+    color: var(--light-blue);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    padding: 0 1rem 0 1rem;
+    position: relative;
+    vertical-align: bottom;
+}
+
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: url("../images/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 10rem;
+}
+
+.banner__label {
+    margin: 3rem 5rem 0 0;
+    padding: 0 1rem 0 1rem;
+}
+
+
+h1,
+h2
+{
+    background-color: var(--light-blue);
+    color: var(--dark-grey);
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    font-size: 250%;
 }
 
 body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--medium-grey);
+    background-color: var(--light-grey);
+}
+
+main {
     display: flex;
     flex-direction: column;
 }
 
-h1 {
-    text-align: left;
-}
-
-nav {
-    text-align: right;
+.container {
+    display: flex;
     flex-direction: row;
 }
 
-body {
+.container > p {
+    margin: 3rem;
+}
+
+h3 {
+    display: flex;
+    font-size: 400%;
+    border-right: 5px solid var(--medium-grey);
+    flex-basis: 20rem;
+    text-align: end;
+}
+
+.subcontainer {
+    display: flex;
     flex-direction: column;
+    margin: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    padding: 2px;
+}
+
+.project-header {
+  position: absolute;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-blue);
+}
+
+.project img {
+    border: 5px solid var(--light-blue);
+}
+
+footer .subcontainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 
 /* Changes in design for tablets */
-@media screen and (max-width:992px) {
-
-}
+@media screen and (max-width:992px) {}
 
 /* Changes in design for mobiles */
-@media screen and (max-width:768px) {
-
-}
+@media screen and (max-width:768px) {} 
