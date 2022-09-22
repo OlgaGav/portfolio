@@ -4,86 +4,99 @@
         <title>Olga Gavrushenko: professional portfolio</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        <!-- Import the CSS Reset -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+        <!-- <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     </head>
     <body>
         <header>
-                <h1>Olga Gavrushenko</h1>
+            <div class="header__inner">
+                <h1 class="header__label">Olga Gavrushenko</h1>
                 <nav>
-                    <ul class="nav-elements">
-                        <li class="nav-element"><a href="#about-me">About me</a></li>
-                        <li class="nav-element"><a href="#work">Work</a></li>
-                        <li class="nav-element"><a href="#contact-me">Contact me</a></li>
-                        <li class="nav-element"><a href="https://zety.com/profile/olga-gavrushenko">Resume</a></li>
-                    </ul>
+                    <div class="nav__items">
+                        <a class="nav__link" href="#about-me">About me</a>
+                        <a class="nav__link" href="#work">Work</a>
+                        <a class="nav__link" href="#contact-me">Contact me</a>
+                        <a class="nav__link" href="https://zety.com/profile/olga-gavrushenko">Resume</a>
+                    </div>
                 </nav>
+            </div>
         </header>
         
-        <section class="subheader">
-            <h2>My Professional Portfolio</h2>
-            <img src="assets/images/banner.jpg" alt="wooden fence painted diagonally in light and dark blue colors">
+        <section class="banner">
+            <h2 class="banner__label">Professinal Portfolio</h2>
         </section>
 
         <main>
-            <section id="about-me">
+            <section class="container" id="about-me">
                 <h3>About Me</h3>
-                <p>Software Engineer with 10 years of progressive experience in Qulity Assurance. Expertise in creating
+                <div class="subcontainer">
+                    <p>Software Engineer with 10 years of progressive experience in Qulity Assurance. Expertise in creating
                     detailed test plans, test cases for manual and automation testing within the
                     application under test, testing functional and non-functional requirements,
                     requirements analysis, and continuous improvements in the quality of testing. Design
                     automation framework for UI using Selenium WebDriver and RESTfull API using
                     RestAssured (Java), develop and maintain frameworks. Proficient in all phases of the software development lifecycle
                     (SDLC). Continue education as a Full Stack Developed in Cooding Bootcamp.</p>
+                </div>
             </section>
-            <section id="work">
+            <section class="container" id="work">
                 <h3>Work</h3>
-                    <section class="project">
-                        <h4 class="project-name">Surf Report</h4>
-                        <p class="description">MERN Stack</p>
-                        <img src="assets/images/project-surf.jpg" alt="abstract picture in grey color with perspective view of foggy field">
-                    </section>
-                    <section class="project">
-                        <h4 class="project-name">LED Wall</h4>
-                        <p class="description">Node/IoT</p>
-                        <img src="assets/images/project-led-wall.jpg" alt="zoomed-in LED screen with visible luminous pixels">
-                    </section>
-                    <section class="project">
-                        <h4 class="project-name">Calculator</h4>
-                        <p class="description">React/JavaScript/CSS</p>
-                        <img src="assets/images/project-calculator.jpg" alt="laptop with code on the screen">
-                    </section>
-                    <section class="project">
-                        <h4 class="project-name">Pastel Puzzles</h4>
-                        <p class="description">MERN Stack</p>
-                        <img src="assets/images/project-pastel-puzzles.jpg" alt="laptop with code on the screen">
-                    </section>
-                    <section class="project">
-                        <h4 class="project-name">Run Buddy</h4>
-                        <p class="description">HTML/CSS</p>
-                        <img src="assets/images/project-run-buddy.jpg" alt="upper left part of 'Run Buddy' site scrceenshot">
-                    </section>
+                <div class="subcontainer">
+                    <div class="row">
+                        <section class="project big-banner">
+                            <div class="project-header">
+                                <h4 class="project-name">Surf Report</h4>
+                                <p class="description">MERN Stack</p>
+                            </div>
+                            <img src="assets/images/project-surf.jpg" alt="abstract picture in grey color with perspective view of foggy field">
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="project small-banner">
+                            <div class="project-header">
+                                <h4 class="project-name">LED Wall</h4>
+                                <p class="description">Node/IoT</p>
+                            </div>
+                            <img src="assets/images/project-led-wall.jpg" alt="zoomed-in LED screen with visible luminous pixels">
+                        </section>
+                        <section class="project small-banner">
+                            <div class="project-header">
+                                <h4 class="project-name">Calculator</h4>
+                                <p class="description">React/JavaScript/CSS</p>
+                            </div>
+                            <img src="assets/images/project-calculator.jpg" alt="laptop with code on the screen">
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="project small-banner">
+                            <div class="project-header">
+                                <h4 class="project-name">Pastel Puzzles</h4>
+                                <p class="description">MERN Stack</p>
+                            </div>
+                            <img src="assets/images/project-pastel-puzzles.jpg" alt="laptop with code on the screen">
+                        </section>
+                        <section class="project small-banner">
+                            <div class="project-header">
+                                <h4 class="project-name">Run Buddy</h4>
+                                <p class="description">HTML/CSS</p>
+                            </div>
+                            <img src="assets/images/project-run-buddy.jpg" alt="upper left part of 'Run Buddy' site scrceenshot">
+                        </section>
+                    </div>
+                </div>
         </main>
-        <footer id="contact-me">
+        <footer class="container" id="contact-me">
             <h3>Contact Me</h3>
-            <ul>
-                <li class="contact-details">
-                    <a href="tel:4155100829">415.510.0829</a>
-                </li>
-                <li class="contact-details">
-                    <a href="mailto:olga.gavrushenko@hotmail.com?subject=Contact from portfolio site.">olga.gavrushenko@hotmail.com</a>
-                </li>
-                <li class="contact-details">
-                    <a href="https://github.com/OlgaGav/">GitHub</a>
-                </li>
-                <li class="contact-details">
-                    <a href="https://twitter.com/Olga_OLAN">Twitter</a>
-                </li>
-                <li class="contact-details">
-                    <a href="https://open.spotify.com/">Spotify</a>
-                </li>
-            </ul>
+            <div class="subcontainer ">
+                <a class="contact-details" href="tel:4155100829">415.510.0829</a>
+                <a class="contact-details" href="mailto:olga.gavrushenko@hotmail.com?subject=Contact from portfolio site.">olga.gavrushenko@hotmail.com</a>
+                <a class="contact-details" href="https://github.com/OlgaGav/">GitHub</a>
+                <a class="contact-details" href="https://twitter.com/Olga_OLAN">Twitter</a>
+                <a class="contact-details" href="https://open.spotify.com/">Spotify</a>
+            </div>
         </footer>
     </body>
 </html>    
