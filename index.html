@@ -6,45 +6,43 @@
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
         <!-- Import the CSS Reset -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-        <!-- <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     </head>
     <body>
         <header>
-            <div class="header__inner">
-                <h1 class="header__label">Olga Gavrushenko</h1>
-                <nav>
-                    <div class="nav__items">
-                        <a class="nav__link" href="#about-me">About me</a>
-                        <a class="nav__link" href="#work">Work</a>
-                        <a class="nav__link" href="#contact-me">Contact me</a>
-                        <a class="nav__link" href="https://zety.com/profile/olga-gavrushenko">Resume</a>
-                    </div>
-                </nav>
+            <div class="header__label">
+                <img class="avatar" src="assets\images\avatar.png" alt="head shot photo of a girl with long hair">
+                <h1>Olga Gavrushenko</h1>
             </div>
+            <nav>
+                <a class="nav__link" href="#about-me">About me</a>
+                <a class="nav__link" href="#work">Work</a>
+                <a class="nav__link" href="#contact-me">Contact me</a>
+                <a class="nav__link" href="https://zety.com/profile/olga-gavrushenko">Resume</a>
+            </nav>
         </header>
         
         <section class="banner">
-            <h2 class="banner__label">Professinal Portfolio</h2>
+            <h2 class="banner__label">Professional Portfolio</h2>
         </section>
 
         <main>
             <section class="container" id="about-me">
-                <h3>About Me</h3>
-                <div class="subcontainer">
+                <h3 layout="left">About Me</h3>
+                <div layout="right-paragraph" class="content">
                     <p>Software Engineer with 10 years of progressive experience in Qulity Assurance. Expertise in creating
                     detailed test plans, test cases for manual and automation testing within the
                     application under test, testing functional and non-functional requirements,
-                    requirements analysis, and continuous improvements in the quality of testing. Design
-                    automation framework for UI using Selenium WebDriver and RESTfull API using
+                    requirements analysis, and continuous improvements in the quality of testing. </p>
+                    <p>Design automation framework for UI using Selenium WebDriver and RESTfull API using
                     RestAssured (Java), develop and maintain frameworks. Proficient in all phases of the software development lifecycle
                     (SDLC). Continue education as a Full Stack Developed in Cooding Bootcamp.</p>
                 </div>
             </section>
             <section class="container" id="work">
-                <h3>Work</h3>
-                <div class="subcontainer">
+                <h3 layout="left">Work</h3>
+                <div layout="right-columns" class="content">
                     <div class="row">
                         <section class="project big-banner">
                             <div class="project-header">
@@ -89,8 +87,8 @@
                 </div>
         </main>
         <footer class="container" id="contact-me">
-            <h3>Contact Me</h3>
-            <div class="subcontainer ">
+            <h3 layout="left">Contact Me</h3>
+            <div layout="right-links" class="content">
                 <a class="contact-details" href="tel:4155100829">415.510.0829</a>
                 <a class="contact-details" href="mailto:olga.gavrushenko@hotmail.com?subject=Contact from portfolio site.">olga.gavrushenko@hotmail.com</a>
                 <a class="contact-details" href="https://github.com/OlgaGav/">GitHub</a>

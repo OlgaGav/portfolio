@@ -1,3 +1,4 @@
+/* colors used on the site */
 :root {
     /* page background color */
     --light-grey: #EDEDF6;
@@ -17,41 +18,118 @@
     background-color: var(--light-on);
 }
 
+/* Element selectors */
+
+/* Setup background color and font for main content of site */
+body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--medium-grey);
+    background-color: var(--light-grey);
+}
+
+/* Paragraph settings */
+p {
+    padding-bottom: 20px;
+}
+
+/* Header includes header label with site name and avatar and navigation bar */
 header {
-    width: 100%;
-    background-color: var(--dark-grey);
-    top: 0;
-    left: 0;
-    right: 0;
-    position: relative;
-}
-
-.header__inner {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;    
-}
-
-.header__label {
-    margin: 1rem 1rem 1rem 0;
-    padding: 0 1rem 0 4rem;
+    justify-content: space-between;
+    background-color: var(--dark-grey);
 }
 
 nav {
-    margin: 0 5rem 0 0;
+    display: flex;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h1,
+h2
+{
+    background-color: var(--light-blue);
+    color: var(--dark-grey);
+}
+
+h3[layout="left"] {
+    display: box;
+    font-size: 350%;
+    border-right: 5px solid var(--medium-grey);
+    width: 300px;
+    padding: 0 5px 0 50px ;
+    text-align: right;
+}
+
+/* settings for content on hte right side, layout values represent the content structure */
+
+div[layout="right-paragraph"] {
+    display: block;
+    padding: 0 20px 0 20px;
+}
+
+div[layout="right-columns"] {
+    flex-direction: column;
+    margin: 20px;
+}
+
+div[layout="right-links"] {
+    flex-flow: row;
+    align-self: center;
+    margin-left: 5px;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+}
+
+/* Class selectors */
+
+/* header label handle avatar picture and h1 element */
+.header__label {
+    display: flex;
+    align-items: center;
+}
+
+/* formatting text in header label */
+.header__label h1 {
+    margin: 1rem 1rem 1rem 0;
+    padding: 0 1rem 0 7rem;
+}
+
+/* Resize avatar image, poistion in the top left corner */
+.avatar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    padding: 2px;
+    margin: 0 0 0 5px;
+    border-radius: 50%;
+}
+
+/* design of the navigation links at the top menu*/
 .nav__link {
     font-size: 130%;
     color: var(--light-blue);
     text-decoration: underline;
-    text-decoration-thickness: 2px;
-    padding: 0 1rem 0 1rem;
-    position: relative;
-    vertical-align: bottom;
-}
+    text-decoration-thickness: 3px;
+    padding: 1rem;
+}  
 
-
+/* banner or subheader part of site */
 .banner {
     position: relative;
     display: flex;
@@ -68,61 +146,31 @@ nav {
     padding: 0 1rem 0 1rem;
 }
 
-
-h1,
-h2
-{
-    background-color: var(--light-blue);
-    color: var(--dark-grey);
+/* design for links in the footer #contact-me */
+.contact-details {
+    font-size: 130%;
+    color: var(--grey);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
-h1 {
-    font-size: 400%;
-}
-
-h2 {
-    font-size: 250%;
-}
-
-body {
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--medium-grey);
-    background-color: var(--light-grey);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
+/* TBD: add commnets below */
 .container {
     display: flex;
     flex-direction: row;
-}
+    padding: 10px;
+    margin: 10px;
+    flex: 25 50 50%;
+} 
 
-.container > p {
-    margin: 3rem;
-}
-
-h3 {
+.content {
     display: flex;
-    font-size: 400%;
-    border-right: 5px solid var(--medium-grey);
-    flex-basis: 20rem;
-    text-align: end;
-}
-
-.subcontainer {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem;
+    flex: 2 1 500px;
 }
 
 .row {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
 }
 
 .project {
@@ -140,14 +188,13 @@ h3 {
     border: 5px solid var(--light-blue);
 }
 
-footer .subcontainer {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+
+/* Design layout changes for handhelds*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1310px) {
+
 }
 
-/* Changes in design for tablets */
-@media screen and (max-width:992px) {}
+/* Changes in design for phones*/
+@media screen and (min-width: 320px) and (max-width:768px) {
 
-/* Changes in design for mobiles */
-@media screen and (max-width:768px) {} 
+} 
