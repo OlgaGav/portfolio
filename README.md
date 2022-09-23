@@ -15,7 +15,7 @@ Available by link https://olgagav.github.io/portfolio/
 
 **Work** section: you can find link to the implemented projects with references what technologies and frameworks were used. 
 
-*Note:* Work on some projects in progress. Links will be updated when ready.
+_Note:_ Work on some projects in progress. Links will be updated when ready.
 
 **Contact Me** has the information how to contact me. Also link to 'Resume' is available at the top, in navigation menu.
 
