@@ -10,7 +10,7 @@
     --medium-grey: #435877;
     /* color for labels in main section: h4, .description, .contactdetails */
     --grey: #31333E;
-    /* highlight color for projects */
+    /* highlight color for projects, and in selection */
     --light-on: #A1AF34;
 }
 
@@ -31,10 +31,10 @@ body {
 
 /* Paragraph settings */
 p {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-/* Header includes header label with site name and avatar and navigation bar */
+/* Design header which includes header label with site name and avatar and navigation bar */
 header {
     display: flex;
     flex-direction: row;
@@ -67,33 +67,10 @@ h2
     color: var(--dark-grey);
 }
 
-h3[layout="left"] {
-    display: box;
-    font-size: 350%;
-    border-right: 5px solid var(--medium-grey);
-    width: 300px;
+h3 {
     padding: 0 5px 0 50px ;
     text-align: right;
-}
-
-/* settings for content on hte right side, layout values represent the content structure */
-
-div[layout="right-paragraph"] {
-    display: block;
-    padding: 0 20px 0 20px;
-}
-
-div[layout="right-columns"] {
-    flex-direction: column;
-    margin: 20px;
-}
-
-div[layout="right-links"] {
-    flex-flow: row;
-    align-self: center;
-    margin-left: 5px;
-    flex: 1 1 auto;
-    justify-content: space-evenly;
+    font-size: 350%;
 }
 
 /* Class selectors */
@@ -146,6 +123,66 @@ div[layout="right-links"] {
     padding: 0 1rem 0 1rem;
 }
 
+/* display settings for the main content area */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 0 100%;
+} 
+
+/* design for left side area */
+.container__left {
+    display: block;
+    min-width: 300px;
+    max-width: 300px;
+    border-right: 5px solid var(--medium-grey);
+}
+
+/* rendering blocks within projects */
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 60px;
+    justify-content: space-between;
+    flex: 0 0 900px;
+}
+
+.project {
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.project-header {
+    position: absolute;
+    margin: 2rem 0 0 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--light-blue);
+  }
+  
+.project img {
+    border: 5px solid var(--light-blue);
+}
+
+/* design of 'About Me' text area */
+.content_paragraph {
+    display: block;
+    margin: 0 60px;
+}
+
+/* links design in footer section 'Contact Me' */
+.content__links {
+    display: flex;
+    margin: 0 60px;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex: 2 1 500px;
+    align-self: center;
+    margin-left: 5px;       
+}
+
 /* design for links in the footer #contact-me */
 .contact-details {
     font-size: 130%;
@@ -154,42 +191,7 @@ div[layout="right-links"] {
     text-decoration-thickness: 3px;
 }
 
-/* TBD: add commnets below */
-.container {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    margin: 10px;
-    flex: 25 50 50%;
-} 
-
-.content {
-    display: flex;
-    flex: 2 1 500px;
-}
-
-.row {
-    display: flex;
-    flex-flow: row;
-}
-
-.project {
-    padding: 2px;
-}
-
-.project-header {
-  position: absolute;
-  margin: 2rem 0 0 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--light-blue);
-}
-
-.project img {
-    border: 5px solid var(--light-blue);
-}
-
-
-/* Design layout changes for handhelds*/
+/* Design layout changes for handheld devices*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1310px) {
 
 }
