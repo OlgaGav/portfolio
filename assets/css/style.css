@@ -32,30 +32,25 @@ body {
     background-color: var(--light-grey);
 }
 
-/* Design header which includes header label with site name and avatar and navigation bar */
+/* Design header which includes header label with name, avatar, and navigation bar */
 header {
+    background-color: var(--dark-grey);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-grey);
 }
 
 nav {
-    display: flex;
+    display:flex;
+    flex-flow: row warp;
+    align-items: flex-end;
 }
 
 main {
     display: flex;
     flex-direction: column;
-}
-
-h1 {
-    font-size: 400%;
-}
-
-h2 {
-    font-size: 250%;
 }
 
 h1,
@@ -65,47 +60,54 @@ h2
     color: var(--dark-grey);
 }
 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 h3 {
-    /* padding: 0 5px 0 50px ; */
-    padding: 0 1.5rem 0 3rem;
+    font-size: 3.5rem;
     text-align: right;
-    font-size: 350%;
+    padding: 0 1.5rem 0 3rem;
 }
 
 /* Class selectors */
 
-/* header label handle avatar picture and h1 element */
-.header__label {
+/* header-label handle avatar image and h1 element */
+.header-label {
     display: flex;
     align-items: center;
 }
 
 /* formatting text in header label */
-.header__label h1 {
+.header-label h1 {
     margin: 1rem 1rem 1rem 0;
     padding: 0 1rem 0 7rem;
 }
 
-/* Resize avatar image, poistion in the top left corner */
+/* Resize avatar image, position in the top left corner */
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
     position: absolute;
-    padding: 2px;
-    margin: 0 0 0 5px;
+    padding: 0.2rem;
+    margin: 0 1rem;
     border-radius: 50%;
 }
 
 /* design of the navigation links at the top menu*/
-.nav__link {
-    font-size: 130%;
+.nav-link {
+    font-size: 1.3rem;
     color: var(--light-blue);
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 0.2rem;
     padding: 1rem;
 }  
 
-/* banner or subheader part of site */
+/* banner, used as background for subtitle */
 .banner {
     position: relative;
     display: flex;
@@ -117,7 +119,7 @@ h3 {
     height: 10rem;
 }
 
-.banner__label {
+.banner-label {
     margin: 3rem 5rem 0 0;
     padding: 0 1rem 0 1rem;
 }
@@ -126,39 +128,39 @@ h3 {
 .container {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 1rem;
     flex: 1 0 100%;
 } 
 
 /* Paragraph settings for section 'About Me' */
-.content_paragraph p {
+.content-paragraph p {
     margin-bottom: 2rem;
 }
 
 /* design for left side area */
-.container__left {
+.container-left {
     display: block;
-    min-width: 300px;
-    max-width: 300px;
-    border-right: 5px solid var(--medium-grey);
+    min-width: 18rem;
+    max-width: 18rem;
+    border-right: 0.3rem solid var(--medium-grey);
 }
 
-/* rendering blocks within projects */
+/* rendering project cards within projects */
 .projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 60px;
+    margin-left: 4rem;
     justify-content: space-between;
-    flex: 0 0 900px;
+    flex: 0 0 50rem;
 }
 
 .project {
-    padding: 10px;
+    padding: 0.5rem;
 }
 
-.project__header {
+.project-header {
     align-self: flex-end;
     position: absolute;
     margin: 0 0 1rem 0;
@@ -166,19 +168,16 @@ h3 {
     background-color: var(--light-blue);
   }
   
-.project__image {
-    border: 5px solid var(--light-blue);
+.project-card {
+    border: 0.5rem solid var(--light-blue);
     display: flex;
     background-color: var(--light-blue);
     align-items: center;
 }
 
 .project img:hover {
-    filter: blur(5px);
-    filter: brightness(0.4);
+    filter: brightness(1);
     filter: contrast(200%);
-    filter: grayscale(50%);
-    filter: hue-rotate(90deg);
     filter: invert(75%);
     filter: opacity(25%);
     filter: saturate(30%);
@@ -186,36 +185,111 @@ h3 {
 }
 
 /* design of 'About Me' text area */
-.content_paragraph {
+.content-paragraph {
     display: block;
-    margin: 0 60px;
+    margin: 0 4rem;
 }
 
-/* links design in footer section 'Contact Me' */
-.content__links {
+/* settings to render content in #contact-me section */
+.footer-links {
     display: flex;
-    margin: 0 60px;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    flex: 2 1 500px;
+    flex: 1 1 0;
     align-self: center;
-    margin-left: 5px;       
 }
 
-/* design for links in the footer #contact-me */
+/* design for links in the #contact-me section */
 .contact-details {
-    font-size: 130%;
+    font-size: 1.3rem;
     color: var(--grey);
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 0.2rem;
+    padding: 0 1rem;
 }
 
-/* Design layout changes for handheld devices*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1310px) {
+/* to support screens less then 1340px, includes small screens, laptops*/
+@media only screen and (max-width: 1340px) {
 
-}
+    /* adjust section names */
+    h3 {
+        padding: 0 1rem 0 0;
+        text-align: right;
+        margin: 0;
+        width: 2rem;
+        font-size: 3rem;
+    }
+    /* adjust left hand side section width */
+    .container-left {
+        min-width: 13rem;
+        max-width: 13rem;
+    }
+    /* adjust right hand side section width */
+    .content-paragraph {
+        margin: 0 2rem;
+    }
+    /* adjust  */
+    .projects {
+        flex-flow: row wrap;
+        flex: 1 1 400px;
+        margin-left: 2rem;
+    }
+    
+    .project {
+        padding: 1rem;
+    }
 
-/* Changes in design for phones*/
-@media screen and (min-width: 320px) and (max-width:768px) {
+    .project-card img {
+        max-width: 100%;
+        height: auto;
+    }
+} 
+
+/* to support screens for mobile devices and small screen tablets*/
+@media only screen and (max-width: 599px) {
+    /* adjust size of title, subtitle and section names */
+    header {
+        justify-content: flex-start;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        padding: 0 0.4rem;
+        font-size: 1.5rem;
+    }
+    /* adjust settings to have content in place */
+    .footer-links {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .container-left {
+        min-width: 6.5rem;
+        max-width: 6.5rem;
+    }
+    .project-card {
+        background-color: var(--light-blue);
+        border: 0.4rem solid var(--light-blue);
+    }
+    .project-header {
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+        background-color: var(--light-blue);
+      }
+    .content-paragraph {
+        margin: 0 1rem;
+    }
+    .banner {
+        justify-content: flex-end;
+    }
+    .banner-label {
+        margin: 0;
+        padding: 0 1rem 0 1rem;
+    }
 
 } 
