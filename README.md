@@ -1,6 +1,8 @@
 # Olga Gavrushenko: professional portfolio
 ## Description
-Portfolio site is a showcase of web development work. Current site include links to the projects that show the the skills and proficiency in the next technologies
+Portfolio site is a showcase of web development work. Site is created with HTML and CSS, support responsive web-design, accessability.
+
+Current site include links to the projects that show the the skills and proficiency in the next technologies
 - HTML
 - CSS
 - JavaScript
@@ -9,15 +11,18 @@ Portfolio site is a showcase of web development work. Current site include links
 ## Usage
 This site was built using [GitHub Pages](https://pages.github.com/). 
 
-Available by link https://olgagav.github.io/portfolio/
+Site available by link https://olgagav.github.io/portfolio/
+
+Use navigation links on the top for quick scrolling to correcponding section. **Note** that 'Resume' link will navigate to external site as of now.
 
 **About Me** section provide brief summary of professional path. 
 
-**Work** section: you can find link to the implemented projects with references what technologies and frameworks were used. 
+At **Work** section you can find links to the implemented projects. Description provide references what technologies and frameworks were used in development. 
 
-_Note:_ Work on some projects in progress. Links will be updated when ready.
+_Note:_ Work on the projects is still in progress. Links will be updated when ready.
 
-**Contact Me** has the information how to contact me. Also link to 'Resume' is available at the top, in navigation menu.
+**Contact Me** has the information how to contact me. 
+
 
 Link to github repository: https://github.com/OlgaGav/portfolio
 
