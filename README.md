@@ -11,7 +11,7 @@ Current site include links to the projects that show the the skills and proficie
 ## Usage
 This site was built using [GitHub Pages](https://pages.github.com/). 
 
-Site available by link https://olgagav.github.io/portfolio/
+Site available by link https://olgagav.github.io/portfolio-olga-gavrushenko
 
 Use navigation links on the top for quick scrolling to correcponding section. **Note** that 'Resume' link will navigate to external site as of now.
 
