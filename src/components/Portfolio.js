@@ -5,10 +5,35 @@ import imageProject4 from "./img/manuscript.jpg";
 import imageProject5 from "./img/project-pastel-puzzles.jpg";
 import imageProject6 from "./img/project-led-wall.jpg";
 import imageProject7 from "./img/leadstack.jpg";
+import imageProject8 from "./img/tetris.png";
+import imageProject9 from "./img/salon-a.png";
 import Project from "./Project";
 
 const Portfolio = () => {
   const projects = [
+    {
+      id: 9,
+      title: "Hair-Salon-Booking-App",
+      gitHubLink: "https://github.com/olgagav/salon-a",
+      applLink: "https://olgagav.github.io/salon-a/",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      imgSrc: imageProject9,
+    },
+        {
+      id: 8,
+      title: "Tetris Game",
+      gitHubLink: "https://github.com/OlgaGav/tetris",
+      applLink: "https://olgagav.github.io/tetris/",
+      techStack: [
+        "Node",
+        "VanillaJavaScript",
+      ],
+      imgSrc: imageProject8,
+    },
     {
       id: 7,
       title: "LeadStack",
