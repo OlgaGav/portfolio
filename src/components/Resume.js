@@ -28,7 +28,7 @@ const otherSkills = [
 
 const handleDownload = () => {
   // const pdfUrl = './public/dist/OlgaGavrushenkoResume.pdf';
-  const pdfUrl = "./dist/OlgaGavrushenkoResume.pdf";
+  const pdfUrl = "./dist/Resume_Olga_Gavrushenko.pdf";
   const link = document.createElement("a");
   link.href = pdfUrl;
   link.download = "Olga_Gavrushenko_Resume.pdf";

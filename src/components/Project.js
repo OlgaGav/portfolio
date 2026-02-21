@@ -6,8 +6,8 @@ const Project = ({ projects }) => {
           <div className="col">
             <div className="card" key={index}>
               <img
-                src={project.imgSrc}
-                alt="preview of the project"
+                src={`${process.env.PUBLIC_URL}${project.imgSrc}`}
+                alt={project.title}
                 className="img-project card-img-top"
               />
 
