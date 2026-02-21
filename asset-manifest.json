@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio-olga-gavrushenko-react/static/css/main.23581544.css",
-    "main.js": "/portfolio-olga-gavrushenko-react/static/js/main.0c1c4153.js",
-    "static/js/651.a59ec47b.chunk.js": "/portfolio-olga-gavrushenko-react/static/js/651.a59ec47b.chunk.js",
-    "static/media/avatarL.jpg": "/portfolio-olga-gavrushenko-react/static/media/avatarL.714ca2e529bc590a0c9e.jpg",
-    "static/media/bg_white_a.jpg": "/portfolio-olga-gavrushenko-react/static/media/bg_white_a.3261e91c47de7491b551.jpg",
-    "static/media/navbar.jpg": "/portfolio-olga-gavrushenko-react/static/media/navbar.c2d7e067b25c3662a8a1.jpg",
-    "index.html": "/portfolio-olga-gavrushenko-react/index.html",
-    "main.23581544.css.map": "/portfolio-olga-gavrushenko-react/static/css/main.23581544.css.map",
-    "main.0c1c4153.js.map": "/portfolio-olga-gavrushenko-react/static/js/main.0c1c4153.js.map",
-    "651.a59ec47b.chunk.js.map": "/portfolio-olga-gavrushenko-react/static/js/651.a59ec47b.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.ae8a746b.css",
+    "main.js": "/portfolio/static/js/main.447b6edc.js",
+    "static/js/811.eee16448.chunk.js": "/portfolio/static/js/811.eee16448.chunk.js",
+    "static/media/avatarL.jpg": "/portfolio/static/media/avatarL.714ca2e529bc590a0c9e.jpg",
+    "static/media/bg_white_a.jpg": "/portfolio/static/media/bg_white_a.3261e91c47de7491b551.jpg",
+    "static/media/navbar.jpg": "/portfolio/static/media/navbar.c2d7e067b25c3662a8a1.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.ae8a746b.css.map": "/portfolio/static/css/main.ae8a746b.css.map",
+    "main.447b6edc.js.map": "/portfolio/static/js/main.447b6edc.js.map",
+    "811.eee16448.chunk.js.map": "/portfolio/static/js/811.eee16448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23581544.css",
-    "static/js/main.0c1c4153.js"
+    "static/css/main.ae8a746b.css",
+    "static/js/main.447b6edc.js"
   ]
 }
