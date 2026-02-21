@@ -1,4 +1,4 @@
-import photoSrc from "./img/avatarL.jpg";
+import photoSrc from "../images/avatarL.jpg";
 
 const AboutMe = () => {
   return (
@@ -14,20 +14,15 @@ const AboutMe = () => {
           </div>
           <div className="col-sm-10 col-md-7 col-lg-7 aboutMe text-break">
             <p>
-              I am certified Full Stack Developer. Completed Berkley UC
-              Bootcamp. I am proficient in HTML5, CSS, JavaScript, jQuery,
-              Bootstrap, Node.js, Express.js, React.js, MongoDB, MySQL, Git and
-              more. Proficient in all phases of the software development
-              lifecycle (SDLC).
-            </p>
-            <p>
-              In background I have progressive experiense in Quality Assuranse.
-              Expertise in creating detailed test plans, test cases for manual
-              and automation testing within the application under test, testing
-              functional and non-functional requirements, requirements analysis,
-              design automation framework for UI using Selenium WebDriver and
-              RESTfull API using RestAssured (Java), develop and maintain
-              frameworks. 
+              Full-Stack Software Engineer with 3+ years of hands-on development
+              experience building responsive web applications using React,
+              TypeScript, and Node.js. Strong foundation in frontend
+              architecture, REST API design, and third-party integrations. 10+
+              years working in software engineering environments, bringing deep
+              understanding of system design, testing strategy, CI/CD, and
+              production reliability. Passionate about clean architecture,
+              performance optimization, and delivering scalable user-focused
+              solutions.
             </p>
           </div>
         </div>

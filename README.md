@@ -13,7 +13,7 @@
   - Bootstrap
   - @formspree/react (to submit form)
 
-  ![this image display the screenshot of the 'Olga Gavrushenko protfolio (React)' application](img/profile_screensot.png)
+  ![this image display the screenshot of the 'Olga Gavrushenko protfolio (React)' application](images/profile_screensot.png)
 
   ## Table of Contents
  

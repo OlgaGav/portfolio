@@ -26,7 +26,7 @@
 
 html {
   background-color: var(--light-grey);
-  background-image: url("../img/bg_white_a.jpg");
+  background-image: url("./images/bg_white_a.jpg");
 }
 /* Element selectors */
 
@@ -37,7 +37,7 @@ html {
   line-height: 1.6;
   color: var(--medium-grey);
   background-color: var(--light-grey);
-  background-image: url("../img/bg_white_a.jpg");
+  background-image: url("./images/bg_white_a.jpg");
   padding: 3rem;
 }
 
@@ -50,7 +50,7 @@ html {
 
 /* Design header which includes header label with name, and navigation bar */
 .navbar {
-  background-image: url("../img/navbar.jpg");
+  background-image: url("./images/navbar.jpg");
   background-color: var(--dark-grey);   
   display: flex;
   flex-direction: row;
