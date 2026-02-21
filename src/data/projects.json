@@ -9,7 +9,7 @@
         "CSS",
         "JavaScript"
       ],
-      "imgSrc": "/images/salon-a.png"
+      "imgSrc": "/images/09_salon-a.png"
     },
         {
       "id": 8,
@@ -20,7 +20,7 @@
         "Node",
         "VanillaJavaScript"
       ],
-      "imgSrc": "/images/tetris.png"
+      "imgSrc": "/images/08_tetris.png"
     },
     {
       "id": 7,
@@ -38,7 +38,7 @@
         "Chakra UI",
         "JWT, bcrypt"
       ],
-      "imgSrc": "/images/leadstack.jpg"
+      "imgSrc": "/images/07_leadstack.jpg"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
         "Bulma CSS",
         "Multer"
       ],
-      "imgSrc": "/images/centiment.jpg"
+      "imgSrc": "/images/06_centiment.jpg"
     },
     {
       "id": 5,
@@ -66,7 +66,7 @@
       "gitHubLink": "https://github.com/OlgaGav/what-am-i-craving-today",
       "applLink": "https://olgagav.github.io/what-am-i-craving-today/",
       "techStack": ["JavaScript", "HTML", "CSS", "API"],
-      "imgSrc": "/images/what-am-i-craving-today.png"
+      "imgSrc": "/images/05_what-am-i-craving-today.png"
     },
     {
       "id": 4,
@@ -74,7 +74,7 @@
       "gitHubLink": "https://github.com/OlgaGav/weather-dashboard-5-day-forecast",
       "applLink": "https://olgagav.github.io/weather-dashboard-5-day-forecast/",
       "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "OpenWeather API"],
-      "imgSrc": "/images/weather.jpg"
+      "imgSrc": "/images/04_weather.jpg"
     },
     {
       "id": 3,
@@ -93,7 +93,7 @@
         "Node.js",
         "Heroku"
       ],
-      "imgSrc": "/images/manuscript.jpg"
+      "imgSrc": "/images/03_manuscript.jpg"
     },
     {
       "id": 2,
@@ -101,7 +101,7 @@
       "gitHubLink": "https://github.com/OlgaGav/quick-javascript-quiz",
       "applLink": "https://olgagav.github.io/quick-javascript-quiz/",
       "techStack": ["HTML", "CSS", "JavaScript"],
-      "imgSrc": "/images/quiz-simple.jpg"
+      "imgSrc": "/images/02_quiz-simple.jpg"
     },
     {
       "id": 1,
@@ -109,6 +109,6 @@
       "gitHubLink": "https://github.com/OlgaGav/password-generator",
       "applLink": "https://olgagav.github.io/password-generator/",
       "techStack": ["HTML", "CSS", "JavaScript"],
-      "imgSrc": "/images/password-generator.jpg"
+      "imgSrc": "/images/01_password-generator.jpg"
     }
   ]
