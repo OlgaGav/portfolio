@@ -2,6 +2,7 @@ import Resume from "./Resume";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
+import Certificates from "./Certificates";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -41,6 +42,12 @@ const Navbar = () => {
           >
             Resume
           </button>
+          <button
+            className={activeTab === "certificates" ? "active" : ""}
+            onClick={() => handleTabClick("certificates")}
+          >
+            Certificates
+          </button>
         </div>
       </nav>
       {/* Render the content based on the active tab */}
@@ -48,6 +55,7 @@ const Navbar = () => {
       {activeTab === "portfolio" && <Portfolio />}
       {activeTab === "contact" && <Contact />}
       {activeTab === "resume" && <Resume />}
+      {activeTab === "certificates" && <Certificates />}
     </>
   );
 };
