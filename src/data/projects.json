@@ -1,114 +1,112 @@
 [
-    {
-      "id": 9,
-      "title": "Hair-Salon-Booking-App",
-      "gitHubLink": "https://github.com/olgagav/salon-a",
-      "applLink": "https://olgagav.github.io/salon-a/",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "imgSrc": "/images/09_salon-a.png"
-    },
-        {
-      "id": 8,
-      "title": "Tetris Game",
-      "gitHubLink": "https://github.com/OlgaGav/tetris",
-      "applLink": "https://olgagav.github.io/tetris/",
-      "techStack": [
-        "Node",
-        "VanillaJavaScript"
-      ],
-      "imgSrc": "/images/08_tetris.png"
-    },
-    {
-      "id": 7,
-      "title": "LeadStack",
-      "gitHubLink": "https://github.com/isayahdurst/leadstack",
-      "applLink": "https://lead-stack.herokuapp.com/",
-      "techStack": [
-        "Node",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "GraphQL, Apollo Server/Client",
-        "JavaScript",
-        "React",
-        "Chakra UI",
-        "JWT, bcrypt"
-      ],
-      "imgSrc": "/images/07_leadstack.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Centiment",
-      "gitHubLink": "https://github.com/isayahdurst/centiment",
-      "applLink": "https://centiment-inc.herokuapp.com",
-      "techStack": [
-        "Node",
-        "Express",
-        "Dotenv",
-        "MySQL",
-        "Sequelize",
-        "Bcyrpt",
-        "JWT",
-        "Cookies",
-        "Handlebars",
-        "Bulma CSS",
-        "Multer"
-      ],
-      "imgSrc": "/images/06_centiment.jpg"
-    },
-    {
-      "id": 5,
-      "title": "What are we craving today?",
-      "gitHubLink": "https://github.com/OlgaGav/what-am-i-craving-today",
-      "applLink": "https://olgagav.github.io/what-am-i-craving-today/",
-      "techStack": ["JavaScript", "HTML", "CSS", "API"],
-      "imgSrc": "/images/05_what-am-i-craving-today.png"
-    },
-    {
-      "id": 4,
-      "title": "Weather Forecast Dashboard",
-      "gitHubLink": "https://github.com/OlgaGav/weather-dashboard-5-day-forecast",
-      "applLink": "https://olgagav.github.io/weather-dashboard-5-day-forecast/",
-      "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "OpenWeather API"],
-      "imgSrc": "/images/04_weather.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Simple Blog",
-      "gitHubLink": "https://github.com/OlgaGav/share-ideas-tech-blog",
-      "applLink": "https://share-ideas-tech-blog.herokuapp.com/",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "Materialize",
-        "JavaScript",
-        "MySQL",
-        "Sequelize",
-        "Express, express-handlebars",
-        "bcrypt",
-        "Node.js",
-        "Heroku"
-      ],
-      "imgSrc": "/images/03_manuscript.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Quiz Simple",
-      "gitHubLink": "https://github.com/OlgaGav/quick-javascript-quiz",
-      "applLink": "https://olgagav.github.io/quick-javascript-quiz/",
-      "techStack": ["HTML", "CSS", "JavaScript"],
-      "imgSrc": "/images/02_quiz-simple.jpg"
-    },
-    {
-      "id": 1,
-      "title": "Password Generator",
-      "gitHubLink": "https://github.com/OlgaGav/password-generator",
-      "applLink": "https://olgagav.github.io/password-generator/",
-      "techStack": ["HTML", "CSS", "JavaScript"],
-      "imgSrc": "/images/01_password-generator.jpg"
-    }
-  ]
+  {
+    "id": 10,
+    "title": "Leather Stories Studio",
+    "category": "professional",
+    "description": "Full e-commerce shop for a leather goods artisan — from design to production deployment.",
+    "gitHubLink": "https://github.com/OlgaGav/leather-stories-studio-shop",
+    "applLink": "https://leather-stories-studio.com/",
+    "techStack": ["JavaScript", "React", "HTML", "Tailwind CSS", "CSS", "E-commerce", "Stripe API"],
+    "imgSrc": "/images/10_leather-stories-studio.png"
+  },
+  {
+    "id": 9,
+    "title": "Hair Salon Booking App",
+    "category": "professional",
+    "description": "Booking application for a hair salon — built from design to production.",
+    "gitHubLink": "https://github.com/olgagav/salon-a",
+    "applLink": "https://olgagav.github.io/salon-a/",
+    "techStack": ["HTML", "CSS", "JavaScript", "Integration with book.squareup", "Localization"],
+    "imgSrc": "/images/09_hair-studio-a.png"
+  },
+  {
+    "id": 11,
+    "title": "Family Tree",
+    "category": "pet",
+    "description": "Interactive family tree visualization — explore relationships and generational history.",
+    "gitHubLink": "https://github.com/OlgaGav/family-tree",
+    "applLink": "https://olgagav.github.io/family-tree/",
+    "techStack": ["JavaScript", "HTML", "CSS"],
+    "imgSrc": null
+  },
+  {
+    "id": 8,
+    "title": "Tetris Game",
+    "category": "pet",
+    "description": "Classic Tetris built with vanilla JavaScript — keyboard controls, scoring, and level progression.",
+    "gitHubLink": "https://github.com/OlgaGav/tetris",
+    "applLink": "https://olgagav.github.io/tetris/",
+    "techStack": ["Node.js", "Vanilla JavaScript"],
+    "imgSrc": "/images/08_tetris.png"
+  },
+  {
+    "id": 7,
+    "title": "LeadStack",
+    "category": "bootcamp",
+    "description": "Full-stack lead management platform with GraphQL API and React frontend.",
+    "gitHubLink": "https://github.com/isayahdurst/leadstack",
+    "applLink": "https://lead-stack.herokuapp.com/",
+    "techStack": ["Node", "Express", "MongoDB", "GraphQL", "React", "JWT"],
+    "imgSrc": "/images/07_leadstack.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Centiment",
+    "category": "bootcamp",
+    "description": "Social platform for sharing and rating user-submitted content with authentication.",
+    "gitHubLink": "https://github.com/isayahdurst/centiment",
+    "applLink": "https://centiment-inc.herokuapp.com",
+    "techStack": ["Node", "Express", "MySQL", "Handlebars", "Bulma CSS"],
+    "imgSrc": "/images/06_centiment.jpg"
+  },
+  {
+    "id": 5,
+    "title": "What Are We Craving Today?",
+    "category": "bootcamp",
+    "description": "Restaurant finder app that uses third-party APIs to suggest nearby food options.",
+    "gitHubLink": "https://github.com/OlgaGav/what-am-i-craving-today",
+    "applLink": "https://olgagav.github.io/what-am-i-craving-today/",
+    "techStack": ["JavaScript", "HTML", "CSS", "API"],
+    "imgSrc": "/images/05_what-am-i-craving-today.png"
+  },
+  {
+    "id": 4,
+    "title": "Weather Forecast Dashboard",
+    "category": "bootcamp",
+    "description": "5-day weather forecast dashboard powered by the OpenWeather API.",
+    "gitHubLink": "https://github.com/OlgaGav/weather-dashboard-5-day-forecast",
+    "applLink": "https://olgagav.github.io/weather-dashboard-5-day-forecast/",
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "OpenWeather API"],
+    "imgSrc": "/images/04_weather.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Simple Blog",
+    "category": "bootcamp",
+    "description": "Tech blog platform with user authentication and full CRUD operations.",
+    "gitHubLink": "https://github.com/OlgaGav/share-ideas-tech-blog",
+    "applLink": "https://share-ideas-tech-blog.herokuapp.com/",
+    "techStack": ["HTML", "CSS", "JavaScript", "MySQL", "Express", "Node.js"],
+    "imgSrc": "/images/03_manuscript.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Quiz Simple",
+    "category": "bootcamp",
+    "description": "Timed JavaScript quiz with dynamic scoring and a local high-score board.",
+    "gitHubLink": "https://github.com/OlgaGav/quick-javascript-quiz",
+    "applLink": "https://olgagav.github.io/quick-javascript-quiz/",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "imgSrc": "/images/02_quiz-simple.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Password Generator",
+    "category": "bootcamp",
+    "description": "Secure random password generator with configurable length and character criteria.",
+    "gitHubLink": "https://github.com/OlgaGav/password-generator",
+    "applLink": "https://olgagav.github.io/password-generator/",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "imgSrc": "/images/01_password-generator.jpg"
+  }
+]
