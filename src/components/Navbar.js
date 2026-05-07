@@ -1,61 +1,49 @@
+import { useState } from "react";
 import Resume from "./Resume";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Certificates from "./Certificates";
-import { useState } from "react";
+import TestAutomation from "./TestAutomation";
+
+const tabs = [
+  { id: "about", label: "About" },
+  { id: "portfolio", label: "Projects" },
+  { id: "testAutomation", label: "Test Automation" },
+  { id: "resume", label: "Resume" },
+  { id: "certificates", label: "Certificates" },
+  { id: "contact", label: "Contact" },
+];
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState("about"); // Initialize activeTab state
-
-  // Define a function to handle the click event on a tab
-  const handleTabClick = (tab) => {
-    setActiveTab(tab); // Update the activeTab state with the selected tab
-  };
+  const [activeTab, setActiveTab] = useState("about");
 
   return (
     <>
-      <nav className="navbar">
-        <h1 onClick={() => handleTabClick("about")}>Olga Gavrushenko</h1>
-        <div className="links">
-          <button
-            className={activeTab === "about" ? "active" : ""}
-            onClick={() => handleTabClick("about")}
-          >
-            About me
-          </button>
-          <button
-            className={activeTab === "portfolio" ? "active" : ""}
-            onClick={() => handleTabClick("portfolio")}
-          >
-            Portfolio
-          </button>
-          <button
-            className={activeTab === "contact" ? "active" : ""}
-            onClick={() => handleTabClick("contact")}
-          >
-            Contact
-          </button>
-          <button
-            className={activeTab === "resume" ? "active" : ""}
-            onClick={() => handleTabClick("resume")}
-          >
-            Resume
-          </button>
-          <button
-            className={activeTab === "certificates" ? "active" : ""}
-            onClick={() => handleTabClick("certificates")}
-          >
-            Certificates
-          </button>
+      <nav className="site-nav">
+        <h1 className="site-nav-logo" onClick={() => setActiveTab("about")}>
+          Olga Gavrushenko
+        </h1>
+        <div className="site-nav-links">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`nav-tab-btn ${activeTab === tab.id ? "active" : ""}`}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.label}
+            </button>
+          ))}
         </div>
       </nav>
-      {/* Render the content based on the active tab */}
-      {activeTab === "about" && <AboutMe />}
-      {activeTab === "portfolio" && <Portfolio />}
-      {activeTab === "contact" && <Contact />}
-      {activeTab === "resume" && <Resume />}
-      {activeTab === "certificates" && <Certificates />}
+      <main className="page-content">
+        {activeTab === "about" && <AboutMe onNavigate={setActiveTab} />}
+        {activeTab === "portfolio" && <Portfolio />}
+        {activeTab === "testAutomation" && <TestAutomation />}
+        {activeTab === "resume" && <Resume />}
+        {activeTab === "certificates" && <Certificates />}
+        {activeTab === "contact" && <Contact />}
+      </main>
     </>
   );
 };

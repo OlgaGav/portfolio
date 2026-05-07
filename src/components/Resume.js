@@ -1,37 +1,9 @@
-const frontEndSkills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "jQuery",
-  "Responsive design",
-  "React",
-  "Bootstrap",
-];
-const backEndSkills = [
-  "APIs",
-  "Node",
-  "Express",
-  "MySQL, Sequalize",
-  "MongoDB, Mongoose",
-  "REST",
-  "GraphQL",
-];
-const otherSkills = [
-  "Java",
-  "Selenium WebDriver (Java)",
-  "RestAssured (REST API testing)",
-  "Requirements analysis",
-  "Project Management and Bug Tracking Tools: Jira, Bugzilla, BUGDB",
-  "Version Control Systems: Git, Perforce",
-  "Continuous integration tools: Jenkins",
-];
+import { skillGroups } from "../data/skills";
 
 const handleDownload = () => {
-  // const pdfUrl = './public/dist/OlgaGavrushenkoResume.pdf';
-  const pdfUrl = "./dist/Resume_Olga_Gavrushenko.pdf";
   const link = document.createElement("a");
-  link.href = pdfUrl;
-  link.download = "Olga_Gavrushenko_Resume.pdf";
+  link.href = "./dist/OlgaGavrushenkoResume.pdf";
+  link.download = "OlgaGavrushenkoResume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -40,37 +12,51 @@ const handleDownload = () => {
 const Resume = () => {
   return (
     <div className="tab-container">
-      <div>
-        <h2>Resume Page</h2>
-      </div>
-      <div>
-        <button
-          type="button"
-          className="btn btn-outline-primary custom-button"
-          onClick={handleDownload}
-        >
-          Download my resume
+      <div className="d-flex align-items-start justify-content-between flex-wrap gap-3 mb-4">
+        <h2 style={{ marginBottom: 0 }}>Resume</h2>
+        <button className="btn-teal" onClick={handleDownload}>
+          Download PDF
         </button>
       </div>
-      <div className="skills">
-        <h4>Front-End Proficiences</h4>
-        <ul>
-          {frontEndSkills.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
-        <h4>Backend-End Proficiences</h4>
-        <ul>
-          {backEndSkills.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
-        <h4>Other</h4>
-        <ul>
-          {otherSkills.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
+
+      <h4
+        style={{
+          fontFamily: "var(--font-body)",
+          fontWeight: 600,
+          fontSize: "0.8rem",
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+          color: "var(--brand-warm-gray)",
+          marginBottom: "1.25rem",
+        }}
+      >
+        Technical Skills
+      </h4>
+
+      <div className="row g-4">
+        {skillGroups.map((group) => (
+          <div className="col-md-4" key={group.key}>
+            <div className={`resume-skill-group ${group.colorClass}`}>
+              <h5 style={{ color: group.titleColor }}>{group.title}</h5>
+              <div>
+                {group.skills.map((skill) => (
+                  <div
+                    key={skill}
+                    style={{
+                      padding: "0.3rem 0",
+                      borderBottom: "1px solid #f0ede9",
+                      fontSize: "0.9rem",
+                      color: "var(--brand-slate)",
+                      fontFamily: "var(--font-body)",
+                    }}
+                  >
+                    {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
