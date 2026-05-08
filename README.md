@@ -13,7 +13,6 @@
   - Bootstrap
   - @formspree/react (to submit form)
 
-  ![this image display the screenshot of the 'Olga Gavrushenko protfolio (React)' application](images/profile_screensot.png)
 
   ## Table of Contents
  
@@ -27,11 +26,11 @@
     
   ## Installation
   
-  Deploy in github using gh-pages: ```npm run deploy```
+  Deploy in github pages using gh-pages: ```npm run deploy```
   
   ## Usage
   
-  Onen the link https://olgagav.github.io/portfolio-olga-gavrushenko-react/ 
+  Onen the link https://olgagav.github.io/portfolio/ 
   
   __Portfolio__ page has links to recent projects, github and deployed applications, and stack used in this project
 
