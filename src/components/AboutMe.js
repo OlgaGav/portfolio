@@ -1,5 +1,6 @@
 import photoSrc from "../images/avatarL.jpg";
 import { skillGroups } from "../data/skills";
+import SkillCloud from "./SkillCloud";
 
 const AboutMe = ({ onNavigate }) => {
   return (
@@ -48,19 +49,15 @@ const AboutMe = ({ onNavigate }) => {
 
       <section className="skills-section">
         <div className="container">
-          <h2 style={{ fontSize: "1.7rem", marginBottom: "1.75rem" }}>Skills</h2>
-          <div className="row g-4">
+          <h2 style={{ fontSize: "1.7rem", marginBottom: "0.5rem" }}>Skills</h2>
+          <p className="skill-cloud-hint">Bubble size reflects proficiency level</p>
+          <SkillCloud skillGroups={skillGroups} />
+          <div className="skill-cloud-legend">
             {skillGroups.map((group) => (
-              <div className="col-md-4" key={group.key}>
-                <h5 style={{ color: group.titleColor, marginBottom: "0.75rem", fontFamily: "var(--font-body)", fontWeight: 600 }}>
-                  {group.title}
-                </h5>
-                <div>
-                  {group.skills.map((s) => (
-                    <span key={s} className={`skill-badge ${group.badgeClass}`}>{s}</span>
-                  ))}
-                </div>
-              </div>
+              <span key={group.key} className="skill-cloud-legend-item">
+                <span className={`skill-cloud-legend-dot ${group.badgeClass}`} />
+                {group.title}
+              </span>
             ))}
           </div>
         </div>

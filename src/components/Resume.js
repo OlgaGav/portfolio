@@ -41,7 +41,7 @@ const Resume = () => {
               <div>
                 {group.skills.map((skill) => (
                   <div
-                    key={skill}
+                    key={skill.name}
                     style={{
                       padding: "0.3rem 0",
                       borderBottom: "1px solid #f0ede9",
@@ -50,7 +50,7 @@ const Resume = () => {
                       fontFamily: "var(--font-body)",
                     }}
                   >
-                    {skill}
+                    {skill.name}
                   </div>
                 ))}
               </div>
