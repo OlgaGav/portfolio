@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --screenshot=/tmp/portfolio-resume.png --window-size=1280,900 --no-sandbox --disable-gpu 'http://localhost:3000/portfolio#resume')",
+      "Bash(curl -s http://localhost:3000/portfolio)"
+    ]
+  }
+}

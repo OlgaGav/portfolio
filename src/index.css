@@ -215,6 +215,66 @@ h1, h2, h3, h4 {
   color: var(--brand-sage);
 }
 
+/* === Skill cloud === */
+.skill-cloud-hint {
+  color: var(--brand-warm-gray);
+  font-size: 0.83rem;
+  margin-bottom: 1.75rem;
+}
+
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1.5rem;
+}
+
+.skill-cloud-bubble {
+  display: inline-block;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  line-height: 1;
+  cursor: default;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  white-space: nowrap;
+}
+
+.skill-cloud-bubble:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.skill-cloud-legend {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.skill-cloud-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.83rem;
+  color: var(--brand-warm-gray);
+  font-family: var(--font-body);
+}
+
+.skill-cloud-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skill-badge-teal.skill-cloud-legend-dot  { background-color: var(--brand-teal); }
+.skill-badge-coral.skill-cloud-legend-dot { background-color: var(--brand-coral); }
+.skill-badge-sage.skill-cloud-legend-dot  { background-color: var(--brand-sage); }
+
 /* === Tab container (shared page wrapper) === */
 .tab-container {
   font-family: var(--font-body);
