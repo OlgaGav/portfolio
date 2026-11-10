@@ -1,5 +1,5 @@
 
-  # Olga Gavrushenko protfolio (React)
+  # Olga Gavrushenko portfolio
 
   ![License badge](https://img.shields.io/static/v1?label=license&message=None&color=green)
 
